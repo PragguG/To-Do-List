@@ -1,0 +1,52 @@
+body{
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: #FFFFD2;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.container{
+  padding: 50px 0;
+  background-color: #A8D8EA;
+  border-radius: 20%;
+}
+.box{
+  /* text-align: center; */
+  width: 50%;
+  margin: auto ;
+  
+}
+h1{
+  margin-top: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #AA96DA;
+}
+.item{
+  display: flex;
+}
+.item p{
+  margin-left: 10px;
+  color: #AA96DA;
+  font-weight: bold;
+  font-size: large;
+}
+.inputTask{
+  border: none ;
+  border-radius: 10%;
+  margin-right: 10px;
+  font-size: 15px;
+  background-color:#FFFFD2 ;
+  
+}
+::placeholder{
+  color: #AA96DA;
+  padding-left: 10px;
+}
+.btn{
+  background-color: #AA96DA;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #FFFFD2;
+
+}

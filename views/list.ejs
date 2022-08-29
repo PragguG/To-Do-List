@@ -4,21 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
   <title>Todo list</title>
 </head>
 <body>
+  <div class="container">
   <div class="box">
     <h1>Todo List</h1>
   </div>
   <div class="box">
-    <% for(var i=0; i< ejes.length ; i++){ %>
-      <p><%= ejes[i] %></p>
-    <% } %>
+    <% dayej.forEach(function(items){ %>
+      <form action="/delete" method="POST">
+        <div class="item">
+          <input class="checkbox" type="checkbox" name="checkbox1" value="<%=items._id%>" onchange="this.form.submit()">
+          
+          <p><%= items.name %></p>
+        </div>
+      </form>
+      
+    <% }) %>
+   
 
-    <form action="/" method="post">
-      <input type="text" name="ele1" placeholder="Enter the text">
-      <button type="submit">+</button>
+    <form class="item" action="/" method="POST">
+      <input class="inputTask" type="text" name="ele1" placeholder="Enter the text">
+      <button class="btn"type="submit">+</button>
     </form>
   </div>
+</div>
 </body>
 </html>
